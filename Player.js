@@ -8,7 +8,7 @@ class Player {
 
     this.width = width;
     this.height = height;
-    this.image = loadImage("./assets/player.png");
+    this.image = loadImage("player.png");
 
     this.life1 = "green";
     this.life2 = "green";
@@ -32,20 +32,7 @@ class Player {
     pop();
   }
 
-  reduceLife(archerLife) {
-    if (archerLife === 2) {
-      this.life1 = "red";
-    }
-
-    if (archerLife === 1) {
-      this.life2 = "red";
-    }
-
-    if (archerLife === 0) {
-      this.life3 = "red";
-    }
-  }
-
+ 
   display() {
     var pos = this.body.position;
     var angle = this.body.angle;
